@@ -1,0 +1,38 @@
+GET http://localhost:1234/movies
+
+####
+GET http://localhost:1234/movies/5ad1a235-0d9c-410a-b32b-220d91689a08
+
+
+####
+GET http://localhost:1234/movies?genre=drama
+
+
+####
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{ 
+    "title": "Titanicoooo",
+    "year": 1997,
+    "director": "James Cameron",
+    "duration": 195,
+    "poster": "https://i.pinimg.com/originals/42/42/65/4242658e6f1b0d6322a4a93e0383108b.png",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "rate": 7
+}
+
+
+###
+PATCH http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+ 
+}
+
+###
+DELETE http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
